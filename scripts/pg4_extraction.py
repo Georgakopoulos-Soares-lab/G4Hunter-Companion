@@ -343,6 +343,10 @@ class G4Hunter:
         # return LScoreSeq, LSeq , LNumber, LseqID
         if merge_sequences:
             self.merge_overlapping_regions(save_file=True)
+
+        if parse_consensus and consensus_fout:
+            consensus_fout.close()
+            print(colored(f"Finished processing {infile}. Consensus results written to {consensus_outfile}", "green"))
         print(colored(f"Finished processing {infile}. Results written to {self.outfile}", "green"))
         return MSCORE
 
