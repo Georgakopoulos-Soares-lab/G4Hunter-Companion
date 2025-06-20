@@ -1,0 +1,7 @@
+__default__:
+    partition: 'open'
+    mem: '20GB'
+    nodes: 1
+    ncpus: 1
+    jobName: 'JellyZimin'
+    time: '48:00:00'
