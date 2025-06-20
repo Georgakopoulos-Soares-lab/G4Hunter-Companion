@@ -287,6 +287,11 @@ class G4Hunter:
         Args:
             infile: Path to input FASTA file
             parse_consensus: Whether to also parse consensus G4 motifs (currently unused)
+
+        Outputs:
+             Writes to disk the results of G4Hunter analysis in TSV format.
+             If `parse_consensus` is True, also writes consensus pG4 motifs to a separate TSV file.
+             If `merge_sequences` is True, merges overlapping G4 regions and writes to a new TSV file.
             
         Returns:
             list[float]: List of G4 scores for extracted sequences
@@ -294,17 +299,18 @@ class G4Hunter:
         accession_id = G4Hunter.extract_accession_id(infile)
         self.outfile = self.outdir / f"{accession_id}_pG4s.g4_hunter.tsv"
         consensus_outfile = self.outdir / f"{accession_id}_pG4s.consensus.tsv"
+        # direct_outfile = self.outdir / f"{accession_id}_pG4s.direct_repeats.tsv"
         if parse_consensus:
             consensus_fout = open(consensus_outfile, "w", encoding="UTF-8")
             consensus_writer = csv.DictWriter(consensus_fout, 
                                               delimiter="\t", 
                                               fieldnames=G4Hunter.FIELDNAMES)
             consensus_writer.writeheader()
-            print(colored(f"Outsourcing consensus results to: ➡️ {consensus_outfile}", "green"))
+            print(colored(f"Outsourcing consensus results to: ➡️  {consensus_outfile}", "green"))
         else:
             consensus_fout = None
             consensus_writer = None
-        print(colored(f"Outsourcing results to: ➡️ {self.outfile}", "green"))
+        print(colored(f"Outsourcing results to: ➡️  {self.outfile}", "green"))
         with self.outfile.open("w", encoding="UTF-8") as fout:
             writer = csv.DictWriter(fout, delimiter="\t", fieldnames=G4Hunter.FIELDNAMES)
             writer.writeheader()
