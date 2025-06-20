@@ -1,0 +1,4 @@
+design: 'design.csv'
+outdir: 'G4_new_results'
+suffix: 'fna'
+parse_consensus: false
