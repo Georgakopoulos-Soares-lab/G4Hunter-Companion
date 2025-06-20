@@ -300,11 +300,11 @@ class G4Hunter:
                                               delimiter="\t", 
                                               fieldnames=G4Hunter.FIELDNAMES)
             consensus_writer.writeheader()
-            print(colored(f"Outsourcing consensus results to: --> {consensus_outfile}", "green"))
+            print(colored(f"Outsourcing consensus results to: ➡️ {consensus_outfile}", "green"))
         else:
             consensus_fout = None
             consensus_writer = None
-        print(colored(f"Outsourcing results to: --> {self.outfile}", "green"))
+        print(colored(f"Outsourcing results to: ➡️ {self.outfile}", "green"))
         with self.outfile.open("w", encoding="UTF-8") as fout:
             writer = csv.DictWriter(fout, delimiter="\t", fieldnames=G4Hunter.FIELDNAMES)
             writer.writeheader()
