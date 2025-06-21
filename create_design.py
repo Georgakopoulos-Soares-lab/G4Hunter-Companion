@@ -9,6 +9,11 @@ if __name__ == "__main__":
     with open("design.csv", mode="w", encoding="utf-8") as f:
         f.write("accession_id\taccession_path\n")
         for file in files:
-            f.write(f"{file.stem}\t{file.as_posix()}\n")
+            if file.name.endswith(".gz"):
+                file_id = file.name.split(".gz")[0]
+            else:
+                file_id = file.name
+            file_id = Path(file_id)
+            f.write(f"{file_id.stem}\t{file.as_posix()}\n")
 
 
