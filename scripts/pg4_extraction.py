@@ -105,7 +105,26 @@ class G4Hunter:
             return "+"
         raise ValueError(f"Invalid strand name: `{strand}`.")
 
-    def extract_consensus_pG4s(self, seq: str) -> dict[str, list]:
+    def extract_consensus_pG4s(self, accession: str, save_output: bool = True) -> pd.DataFrame:
+        results_df = []
+        for seqID, seq in G4Hunter.parse_fasta(accession):
+            results = self._extract_consensus_pG4s(seq)
+            results.loc[:, "seqID"] = seqID
+            results_df.append(results)
+        results_df = pd.concat(results_df, ignore_index=True)
+        if save_output:
+            accession_id = G4Hunter.extract_accession_id(accession)
+            consensus_outfile = self.outdir / f"{accession_id}_pG4s.consensus.tsv"
+            print(colored(f"Outsourcing pG4s consensus motifs results to: ➡️  {self.outfile}", "green"))
+            results_df.to_csv(consensus_outfile, 
+                              sep="\t", 
+                              mode="w", 
+                              header=True, 
+                              index=False)
+            print(colored(f"Finished processing {accession}. Results written to {self.outfile}", "green"))
+        return results_df
+    
+    def _extract_consensus_pG4s(self, seq: str) -> dict[str, list]:
         """
         Extract consensus putative G4 sequences from DNA sequence using regex patterns.
         
@@ -137,8 +156,26 @@ class G4Hunter:
             for key in results:
                 results[key] = [results[key][i] for i in sorted_indices]
         return results
+    
+    def extract_direct_repeats(self, accession: str, save_output: bool = True) -> pd.DataFrame:
+        results_df = []
+        for seqID, seq in G4Hunter.parse_fasta(accession):
+            results = self._extract_direct_repeats(seq, return_frame=True)
+            results.loc[:, "seqID"] = seqID
+            results_df.append(results)
+        results_df = pd.concat(results_df, ignore_index=True)
+        if save_output:
+            outfile = self.outdir / f"{G4Hunter.extract_accession_id(accession)}_pG4s.direct_repeats.tsv"
+            print(colored(f"Outsourcing direct repeat results to: ➡️  {self.outfile}", "green"))
+            results_df.to_csv(outfile, 
+                              sep="\t", 
+                              mode="w", 
+                              header=True, 
+                              index=False)
+            print(colored(f"Finished processing {accession}. Results written to {self.outfile}", "green"))
+        return results_df
 
-    def extract_direct_repeats(self, seq: str) -> dict[str, list]:
+    def _extract_direct_repeats(self, seq: str, return_frame: bool = False) -> dict[str, list]:
         """
         Extract direct repeat sequences from DNA sequence using regex patterns.
         
@@ -173,10 +210,11 @@ class G4Hunter:
            results["method"].append("Direct Repeat")
         
         # Sort results by start position for consistent output
-        if results["start"]:
-            sorted_indices = sorted(range(len(results["start"])), key=lambda i: results["start"][i])
-            for key in results:
-                results[key] = [results[key][i] for i in sorted_indices]
+        # Because there is only one motif, these are already sorted
+        # if results["start"]:
+        #    sorted_indices = sorted(range(len(results["start"])), key=lambda i: results["start"][i])
+        #    for key in results:
+        #        results[key] = [results[key][i] for i in sorted_indices]
         return results
 
     @staticmethod
@@ -317,7 +355,7 @@ class G4Hunter:
             for seqID, seq in self.parse_fasta(infile):
                 if parse_consensus and consensus_writer:
                     # Extract consensus pG4s
-                    results = self.extract_consensus_pG4s(seq)
+                    results = self._extract_consensus_pG4s(seq)
                     for i in range(len(results["start"])):
                         consensus_writer.writerow({
                             "seqID": seqID,
