@@ -198,26 +198,51 @@ This project is licensed under the MIT License.
 
 ## How to Cite
 
-If you use G4Hunter in your research, please cite the original publication:
+If you use G4Hunter-Companion in your research, please cite the following publications:
 
-```
-Amina Bedrat, Laurent Lacroix, Jean-Louis Mergny, Re-evaluation of G-quadruplex propensity with G4Hunter, Nucleic Acids Research, Volume 44, Issue 4, 29 February 2016, Pages 1746–1759, https://doi.org/10.1093/nar/gkw006
-```
+### Original G4Hunter Algorithm
+**Bedrat, A., Lacroix, L., & Mergny, J. L.** (2016). Re-evaluation of G-quadruplex propensity with G4Hunter. *Nucleic Acids Research*, 44(4), 1746-1759. [https://doi.org/10.1093/nar/gkw006](https://doi.org/10.1093/nar/gkw006)
 
-and either of our publications:
+### G4Hunter-Companion Publications
 
-```
-Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry
-Nikol Chantzi, Shia Wei Liew, Aurell Wijaya, Candace Chan, Ioannis Mouratidis, Emilyane de Oliveira Santana Amaral, Yasin Uzun, Martin Hemberg, Karen M Vasquez, Chun Kit Kwok, Ilias Georgakopoulos Soares
-bioRxiv 2025.06.17.660256; doi: https://doi.org/10.1101/2025.06.17.660256
-```
+**Chantzi, N., Liew, S. W., Wijaya, A., Chan, C., Mouratidis, I., Amaral, E. O. S., ... & Georgakopoulos-Soares, I.** (2025). Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry. *bioRxiv*, 2025.06.17.660256. [https://doi.org/10.1101/2025.06.17.660256](https://doi.org/10.1101/2025.06.17.660256)
 
-or
+**Chantzi, N., Nayak, A., Baltoumas, F. A., Aplakidou, E., Liew, S. W., Galuh, J. E., ... & Georgakopoulos-Soares, I.** (2024). Quadrupia: Derivation of G-quadruplexes for organismal genomes across the tree of life. *bioRxiv*, 2024.07.09.602008. [https://doi.org/10.1101/2024.07.09.602008](https://doi.org/10.1101/2024.07.09.602008)
 
-```
-Quadrupia: Derivation of G-quadruplexes for organismal genomes across the tree of life
-Nikol Chantzi, Akshatha Nayak, Fotis A. Baltoumas, Eleni Aplakidou, Shiau Wei Liew, Jesslyn Elvaretta Galuh, Michail Patsakis, Camille Moeckel, Ioannis Mouratidis, Saiful Arefeen Sazed, Wilfried Guiblet, Austin Montgomery, Panagiotis Karmiris-Obratański, Guliang Wang, Apostolos Zaravinos, Karen M. Vasquez, Chun Kit Kwok, Georgios A. Pavlopoulos, Ilias Georgakopoulos-Soares
-bioRxiv 2024.07.09.602008; doi: https://doi.org/10.1101/2024.07.09.602008
+### BibTeX Format
+
+```bibtex
+@article{bedrat2016g4hunter,
+  title={Re-evaluation of G-quadruplex propensity with G4Hunter},
+  author={Bedrat, Amina and Lacroix, Laurent and Mergny, Jean-Louis},
+  journal={Nucleic acids research},
+  volume={44},
+  number={4},
+  pages={1746--1759},
+  year={2016},
+  publisher={Oxford University Press},
+  doi={10.1093/nar/gkw006}
+}
+
+@article{chantzi2025landscape,
+  title={Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry},
+  author={Chantzi, Nikol and Liew, Shia Wei and Wijaya, Aurell and Chan, Candace and Mouratidis, Ioannis and Amaral, Emilyane de Oliveira Santana and Uzun, Yasin and Hemberg, Martin and Vasquez, Karen M and Kwok, Chun Kit and others},
+  journal={bioRxiv},
+  pages={2025--06},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory},
+  doi={10.1101/2025.06.17.660256}
+}
+
+@article{chantzi2024quadrupia,
+  title={Quadrupia: Derivation of G-quadruplexes for organismal genomes across the tree of life},
+  author={Chantzi, Nikol and Nayak, Akshatha and Baltoumas, Fotis A and Aplakidou, Eleni and Liew, Shiau Wei and Galuh, Jesslyn Elvaretta and Patsakis, Michail and Moeckel, Camille and Mouratidis, Ioannis and Sazed, Saiful Arefeen and others},
+  journal={bioRxiv},
+  pages={2024--07},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory},
+  doi={10.1101/2024.07.09.602008}
+}
 ```
 
 ## Contact
