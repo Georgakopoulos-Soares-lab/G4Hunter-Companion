@@ -33,7 +33,7 @@ micromamba install -c bioconda bedtools
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/g4hunter.git
+git clone https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion.git
 cd g4hunter
 pip install -e .
 ```
@@ -41,7 +41,7 @@ pip install -e .
 ### Development Installation
 
 ```bash
-git clone https://github.com/yourusername/g4hunter.git
+git clone https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion.git
 cd g4hunter
 pip install -e ".[dev]"
 ```
