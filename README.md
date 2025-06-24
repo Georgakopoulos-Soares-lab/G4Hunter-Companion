@@ -14,7 +14,6 @@ The core logic of G4Hunter remains the same, but the implementation has been upd
 
 - **G4Hunter Algorithm**: Sliding window-based scoring for G-quadruplex identification
 - **Consensus Motif Analysis**: Regex-based detection of G4 consensus sequences
-- **Direct Repeat Detection**: Identification of direct repeat sequences
 - **Flexible Parameters**: Customizable window sizes, scoring thresholds, and motif parameters
 - **Multiple Output Formats**: TSV output with optional sequence merging
 - **Modern Python**: Clean, well-documented Python 3.8+ code with type hints
