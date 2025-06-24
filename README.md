@@ -5,7 +5,7 @@
 
 G4Hunter is a tool for identifying potential G-quadruplex (G4) forming sequences in DNA using sliding window scoring. This is a modernized Python 3 implementation with improved functionality and command-line interface.
 
-The original G4Hunter tool was developed by Dr. Bedrat et al. [G4Hunter](git@github.com:AnimaTardeb/G4Hunter.git).
+The original G4Hunter tool was developed by Dr. Bedrat et al. [G4Hunter](https://github.com/AnimaTardeb/G4Hunter).
 
 This is a rework of G4Hunter, which uses Python3 and is designed to be more user-friendly and flexible. It includes features for consensus motif analysis, and customizable parameters for G4 identification. Other improvements include better output formatting, enhanced documentation, better memory utilization by using generators and a more modular code structure. 
 The core logic of G4Hunter remains the same, but the implementation has been updated to use modern Python features and libraries.
