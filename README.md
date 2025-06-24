@@ -68,14 +68,14 @@ You can also specify additional parameters for consensus motif analysis and merg
 
 ```bash
 # With consensus motif analysis
-g4hunter input.fasta --parse-consensus 1 --merge-sequences
+g4hunter $INPUT_FASTA --parse-consensus 1 --merge-sequences
 ```
 
 Or use the following command to specify all parameters:
 
 ```bash
 # Advanced usage with custom parameters
-g4hunter input.fasta \
+g4hunter $INPUT_FASTA \
     --window-size 25 \
     --min-score 1.5 \
     --min-grun-length 3 \
@@ -92,7 +92,7 @@ from g4hunter import G4Hunter
 
 # Initialize G4Hunter
 hunter = G4Hunter(
-    outdir="results",
+    outdir="G4_results",
     window_size=25,
     min_score=1.5,
     min_grun_length=3,
