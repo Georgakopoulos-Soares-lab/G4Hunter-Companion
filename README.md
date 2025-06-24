@@ -168,6 +168,20 @@ Uses regex patterns to identify canonical G4 motifs:
 
 Where `n` is the minimum G-run length and `N{1-7}` represents loops of 1-7 nucleotides. All the parameters can be customized via command-line options.
 
+
+### Snakemake Workflow
+
+Additionally, we provide a Snakemake workflow for running G4Hunter on multiple sequences in parallel. The workflow is defined in the `Snakefile` and can be executed with:
+
+```bash
+export CORES=4
+bash submit_snake.sh $CORES
+```
+
+To use the Snakemake workflow, you need to create a `design.csv` file using `create_design.py` script.
+
+Make sure to customize the `config.yaml` and `cluster.yaml` files to suit your environment and input data.
+
 ## Requirements
 
 - Python 3.8+
