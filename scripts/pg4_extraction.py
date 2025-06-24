@@ -298,6 +298,8 @@ class G4Hunter:
                 merged_sequence += seq[:sstart - pstart]
                 pstart = sstart
             merged_sequence += multiple_sequences[-1]
+            # validate length 
+            assert len(merged_sequence) == end - start, f"Length mismatch for {seqID}: expected {end - start}, got {len(merged_sequence)}"
             merged_g4_sequences["seqID"].append(seqID)
             merged_g4_sequences["start"].append(start)
             merged_g4_sequences["end"].append(end)
@@ -387,7 +389,7 @@ class G4Hunter:
         # return LScoreSeq, LSeq , LNumber, LseqID
         if merge_sequences:
             self.merge_overlapping_regions(save_file=True)
-        if parse_consensus and consensus_fout:
+        if consensus_fout:
             consensus_fout.close()
             print(colored(f"Finished processing {infile}. Consensus results written to {consensus_outfile}", "green"))
         print(colored(f"Finished processing {infile}. Results written to {self.outfile}", "green"))
