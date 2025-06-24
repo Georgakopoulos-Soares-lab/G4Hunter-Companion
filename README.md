@@ -41,7 +41,7 @@ pip install -e .
 ### Development Installation
 
 ```bash
-git clone https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion.git
+git clone git@github.com:Georgakopoulos-Soares-lab/G4Hunter-Companion.git
 cd g4hunter
 pip install -e ".[dev]"
 ```
