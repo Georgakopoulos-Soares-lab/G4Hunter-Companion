@@ -3,11 +3,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+This is a reworked version of G4Hunter, originally developed by Dr. Bedrat et al., licensed under GPLv3 [G4Hunter](https://github.com/AnimaTardeb/G4Hunter).
+
 This repository is developed as part of the research conducted by the Georgakopoulos-Soares lab. The official page can be found at [G4Hunter-Companion](https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion).
 
 G4Hunter is a tool for identifying potential G-quadruplex (G4) forming sequences in DNA using sliding window scoring. This is a modernized Python 3 implementation with improved functionality and command-line interface.
-
-The original G4Hunter tool was developed by Dr. Bedrat et al. [G4Hunter](https://github.com/AnimaTardeb/G4Hunter).
 
 This is a rework of G4Hunter, which uses Python3 and is designed to be more user-friendly and flexible. It includes features for consensus motif analysis, and customizable parameters for G4 identification. Other improvements include better output formatting, enhanced documentation, better memory utilization by using generators and a more modular code structure. 
 The core logic of G4Hunter remains the same, but the implementation has been updated to use modern Python features and libraries.
@@ -199,12 +199,14 @@ This project is licensed under the MIT License.
 
 ## How to Cite
 
-If you use G4Hunter-Companion in your research, please cite the following publications:
+If you use G4Hunter-Companion in your research, cite the original work:
 
 ### Original G4Hunter Algorithm
 **Bedrat, A., Lacroix, L., & Mergny, J. L.** (2016). Re-evaluation of G-quadruplex propensity with G4Hunter. *Nucleic Acids Research*, 44(4), 1746-1759. [https://doi.org/10.1093/nar/gkw006](https://doi.org/10.1093/nar/gkw006)
 
 ### G4Hunter-Companion Publications
+
+Also you could cite either of the following publications that describe the G4Hunter-Companion tool and its applications:
 
 **Chantzi, N., Liew, S. W., Wijaya, A., Chan, C., Mouratidis, I., Amaral, E. O. S., ... & Georgakopoulos-Soares, I.** (2025). Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry. *bioRxiv*, 2025.06.17.660256. [https://doi.org/10.1101/2025.06.17.660256](https://doi.org/10.1101/2025.06.17.660256)
 
