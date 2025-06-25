@@ -5,12 +5,9 @@
 
 This is a reworked version of G4Hunter, originally developed by Dr. Bedrat et al., licensed under GPLv3 [G4Hunter](https://github.com/AnimaTardeb/G4Hunter).
 
-This repository is developed as part of the research conducted by the Georgakopoulos-Soares lab. The official page can be found at [G4Hunter-Companion](https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion).
+G4Hunter is a tool for identifying potential G-quadruplex (G4) forming sequences in DNA using sliding window scoring. This is a rework of G4Hunter, which uses Python3 and is designed to be more user-friendly and flexible. It includes features for consensus motif analysis, and customizable parameters for G4 identification. Other improvements include better output formatting, enhanced documentation, better memory utilization by using generators and a more modular code structure. The core logic of G4Hunter remains the same, but the implementation has been updated to use modern Python features and libraries.
 
-G4Hunter is a tool for identifying potential G-quadruplex (G4) forming sequences in DNA using sliding window scoring. This is a modernized Python 3 implementation with improved functionality and command-line interface.
-
-This is a rework of G4Hunter, which uses Python3 and is designed to be more user-friendly and flexible. It includes features for consensus motif analysis, and customizable parameters for G4 identification. Other improvements include better output formatting, enhanced documentation, better memory utilization by using generators and a more modular code structure. 
-The core logic of G4Hunter remains the same, but the implementation has been updated to use modern Python features and libraries.
+This repository is developed as part of research conducted by the Georgakopoulos-Soares lab. The official page can be found at [G4Hunter-Companion](https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion).
 
 ## Features
 
@@ -23,13 +20,13 @@ The core logic of G4Hunter remains the same, but the implementation has been upd
 
 ## Installation
 
-You can create a new environment as follows:
+The easiest way to install G4Hunter-Companion is through [Anaconda](https://www.anaconda.com/):
 
 ```
 export PYTHON_VERSION=3.10
-micromamba create -n g4hunter python=$PYTHON_VERSION
-micromamba activate g4hunter
-micromamba install -c bioconda bedtools
+conda create -n g4hunter python=$PYTHON_VERSION
+conda activate g4hunter
+conda install -c bioconda bedtools
 ```
 
 ### From Source
@@ -199,7 +196,7 @@ This project is licensed under the GPL-3.0 License, consistent with the original
 
 ## How to Cite
 
-If you use G4Hunter-Companion in your research, cite the original work:
+If you use G4Hunter-Companion in your research, please cite the original work:
 
 ### Original G4Hunter Algorithm
 
@@ -249,7 +246,7 @@ You can also cite the following publications related to G4Hunter-Companion:
 
 ## Contact
 
-For any questions or issues, please contact Dr. Georgakopoulos-Soares or Nikol Chantzi in one of the following emails:
+For any questions or issues, please contact Dr. Georgakopoulos-Soares or Nikol Chantzi at one of the following emails:
 
 ```
 nicolechantzi@gmail.com
