@@ -208,6 +208,10 @@ You can also cite the following publications related to G4Hunter-Companion:
 
 **Chantzi, N., Liew, S. W., Wijaya, A., Chan, C., Mouratidis, I., Amaral, E. O. S., ... & Georgakopoulos-Soares, I.** (2025). Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry. *bioRxiv*, 2025.06.17.660256. [https://doi.org/10.1101/2025.06.17.660256](https://doi.org/10.1101/2025.06.17.660256)
 
+or
+
+**Chantzi, N., Nayak, A., Baltoumas, F. A., Aplakidou, E., Liew, S. W., Galuh, J. E., Patsakis, M., Moeckel, C., Mouratidis, I., Sazed, S. A., Guiblet, W., Montgomery, A., Karmiris-Obratański, P., Wang, G., Zaravinos, A., Vasquez, K. M., Kwok, C. K., Pavlopoulos, G. A., & Georgakopoulos-Soares, I.** (2024). Quadrupia: Derivation of G-quadruplexes for organismal genomes across the tree of life. *bioRxiv*. https://doi.org/10.1101/2024.07.09.602008
+
 ### BibTeX Format
 
 ```bibtex
