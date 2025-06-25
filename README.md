@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository is developed as part of the research conducted by the Georgakopoulos-Soares lab. The official page can be found at [https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion](G4Hunter-Companion).
+This repository is developed as part of the research conducted by the Georgakopoulos-Soares lab. The official page can be found at [G4Hunter-Companion](https://github.com/Georgakopoulos-Soares-lab/G4Hunter-Companion).
 
 G4Hunter is a tool for identifying potential G-quadruplex (G4) forming sequences in DNA using sliding window scoring. This is a modernized Python 3 implementation with improved functionality and command-line interface.
 
