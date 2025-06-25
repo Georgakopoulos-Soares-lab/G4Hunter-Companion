@@ -202,6 +202,7 @@ This project is licensed under the MIT License.
 If you use G4Hunter-Companion in your research, cite the original work:
 
 ### Original G4Hunter Algorithm
+
 **Bedrat, A., Lacroix, L., & Mergny, J. L.** (2016). Re-evaluation of G-quadruplex propensity with G4Hunter. *Nucleic Acids Research*, 44(4), 1746-1759. [https://doi.org/10.1093/nar/gkw006](https://doi.org/10.1093/nar/gkw006)
 
 ### G4Hunter-Companion Publications
