@@ -1,7 +1,7 @@
 # G4Hunter-Companion
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 This is a reworked version of G4Hunter, originally developed by Dr. Bedrat et al., licensed under GPLv3 [G4Hunter](https://github.com/AnimaTardeb/G4Hunter).
 
@@ -195,7 +195,7 @@ Make sure to customize the `config.yaml` and `cluster.yaml` files to suit your e
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 License, consistent with the original G4Hunter implementation.
 
 ## How to Cite
 
