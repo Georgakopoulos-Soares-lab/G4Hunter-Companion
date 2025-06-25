@@ -196,7 +196,7 @@ This project is licensed under the GPL-3.0 License, consistent with the original
 
 ## How to Cite
 
-If you use G4Hunter-Companion in your research, cite the original work:
+If you use G4Hunter-Companion in your research, please cite the original work:
 
 ### Original G4Hunter Algorithm
 
