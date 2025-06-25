@@ -207,11 +207,9 @@ If you use G4Hunter-Companion in your research, cite the original work:
 
 ### G4Hunter-Companion Publications
 
-Also you could cite either of the following publications that describe the G4Hunter-Companion tool and its applications:
+You can also cite the following publications related to G4Hunter-Companion:
 
 **Chantzi, N., Liew, S. W., Wijaya, A., Chan, C., Mouratidis, I., Amaral, E. O. S., ... & Georgakopoulos-Soares, I.** (2025). Landscape and mutational dynamics of G-quadruplexes in the complete human genome and in haplotypes of diverse ancestry. *bioRxiv*, 2025.06.17.660256. [https://doi.org/10.1101/2025.06.17.660256](https://doi.org/10.1101/2025.06.17.660256)
-
-**Chantzi, N., Nayak, A., Baltoumas, F. A., Aplakidou, E., Liew, S. W., Galuh, J. E., ... & Georgakopoulos-Soares, I.** (2024). Quadrupia: Derivation of G-quadruplexes for organismal genomes across the tree of life. *bioRxiv*, 2024.07.09.602008. [https://doi.org/10.1101/2024.07.09.602008](https://doi.org/10.1101/2024.07.09.602008)
 
 ### BibTeX Format
 
