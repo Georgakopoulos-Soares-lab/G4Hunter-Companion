@@ -78,8 +78,8 @@ g4hunter $INPUT_FASTA \
     --min-score 1.5 \
     --min-grun-length 3 \
     --max-loop-length 7 \
-    --parse-consensus \
-    --merge-sequences \
+    --parse-consensus 1 \
+    --merge-sequences 1 \
     --outdir my_results
 ```
 
